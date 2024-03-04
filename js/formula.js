@@ -21,11 +21,11 @@ const post = async() =>{
         const div = document.createElement('div')
         div.classList.add('mt-4')
         let stringWithoutSingleQuotes = record.title.replace(/'/g, '_');
-        div.innerHTML = `<div class="flex gap-6 items-start  bg-[#F3F3F5] p-10 rounded-3xl">
+        div.innerHTML = `<div class="flex lg:flex-row flex-col gap-6 lg:items-start items-center bg-[#F3F3F5] p-5 lg:p-10 rounded-3xl">
         <div class="indicator">
             <span class="indicator-item badge" style ="background-color:${w}"  id = "my-color"></span> 
             <div class="avatar">
-                <div class="w-[72px] h-[72px] rounded-2xl">
+                <div class="lg:w-[72px] w-[100px] h-[100px] lg:h-[72px] rounded-2xl">
                   <img src="${record.image}" />
                 </div>
               </div>
@@ -34,7 +34,7 @@ const post = async() =>{
             <span class="font-medium text-[14px] text-[#12132DCC] mr-4">#${record.category}</span>
             <span class="font-medium text-[14px] text-[#12132DCC] mr-4">#${record.author.name}</span>
             <h2 class="text-[#12132D] font-bold text-xl">${record.title}</h2>
-            <p class="w-[596px] font-normal text-[#12132D99] mt-4">${record.description}</p>
+            <p class="lg:w-[596px] font-normal text-[#12132D99] mt-4">${record.description}</p>
             <hr class="my-5 border-1 border-dashed border-[#12132D40]">
             <div class="flex justify-between">
                 <div class="flex gap-7 text-[#12132D99] text-[16px] font-normal">
@@ -132,11 +132,11 @@ search_key = async()=>{
         const div = document.createElement('div')
         div.classList.add('mt-4')
         let stringWithoutSingleQuotes = record.title.replace(/'/g, '_');
-        div.innerHTML = `<div class="flex gap-6 items-start  bg-[#F3F3F5] p-10 rounded-3xl">
+        div.innerHTML = `<div class="flex lg:flex-row flex-col gap-6 lg:items-start items-center bg-[#F3F3F5] p-5 lg:p-10 rounded-3xl">
         <div class="indicator">
             <span class="indicator-item badge" style ="background-color:${w}" id = "my-color"></span> 
             <div class="avatar">
-                <div class="w-[72px] h-[72px] rounded-2xl">
+                <div class="lg:w-[72px] w-[100px] h-[100px] lg:h-[72px] rounded-2xl">
                   <img src="${record.image}" />
                 </div>
               </div>
@@ -145,7 +145,7 @@ search_key = async()=>{
             <span class="font-medium text-[14px] text-[#12132DCC] mr-4">#${record.category}</span>
             <span class="font-medium text-[14px] text-[#12132DCC] mr-4">#${record.author.name}</span>
             <h2 class="text-[#12132D] font-bold text-xl">${record.title}</h2>
-            <p class="w-[596px] font-normal text-[#12132D99] mt-4">${record.description}</p>
+            <p class="lg:w-[596px] font-normal text-[#12132D99] mt-4">${record.description}</p>
             <hr class="my-5 border-1 border-dashed border-[#12132D40]">
             <div class="flex justify-between">
                 <div class="flex gap-7 text-[#12132D99] text-[16px] font-normal">

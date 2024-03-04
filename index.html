@@ -39,23 +39,30 @@
               <a class="btn btn-ghost text-4xl font-black">ReTro</a>
             </div>
             <div class="navbar-end flex gap-[12px]">
-               <span class="w-[56px] h-[56px] rounded-full bg-[#12132D05] hidden lg:flex justify-center items-center"><i class="fa-solid fa-house text-[#12132D99]"></i></span>
-               <span class="w-[56px] h-[56px] rounded-full bg-[#12132D05] hidden lg:flex justify-center items-center"><i class="fa-solid fa-pencil text-[#12132D99]"></i></span>
-               <span class="w-[56px] h-[56px] rounded-full bg-[#12132D05] hidden lg:flex justify-center items-center"><i class="fa-regular fa-user text-[#12132D99]"></i></span>
-               <span class="w-[56px] h-[56px] rounded-full bg-[#12132D05] hidden lg:flex justify-center items-center"><i class="fa-regular fa-flag text-[#12132D99]"></i></span>
+               <span class="w-[56px] h-[56px] rounded-full bg-[#12132D05] hidden lg:flex justify-center items-center"><div class="tooltip" data-tip="Home">
+                <i class="fa-solid fa-house text-[#12132D99]"></i>
+              </div></span>
+               <span class="w-[56px] h-[56px] rounded-full bg-[#12132D05] hidden lg:flex justify-center items-center"><div class="tooltip" data-tip="Edit"><i class="fa-solid fa-pencil text-[#12132D99]"></i>
+              </div></span>
+               <span class="w-[56px] h-[56px] rounded-full bg-[#12132D05] hidden lg:flex justify-center items-center"><div class="tooltip" data-tip="Profile">
+                <i class="fa-regular fa-user text-[#12132D99]"></i>
+              </div></span>
+               <span class="w-[56px] h-[56px] rounded-full bg-[#12132D05] hidden lg:flex justify-center items-center"><div class="tooltip" data-tip="Policy">
+                <i class="fa-regular fa-flag text-[#12132D99]"></i>
+              </div></span>
                <button class="bg-[#797DFC] px-[40px] py-[18px] rounded-[50px] text-xl text-white font-bold">Sign In</button>
             </div>
           </div>
-          <section class="banner bg-[url('images/bgbanner.png')] bg-[#12132D] bg-cover bg-center p-[100px] rounded-[36px] flex lg:flex-row flex-col justify-center lg:justify-between items-center">
+          <section class="banner bg-[url('images/bgbanner.png')] bg-[#12132D] bg-cover bg-center p-[40px] lg:p-[100px] rounded-[36px] flex lg:flex-row flex-col justify-center lg:justify-between items-center">
              <div class="left">
-               <h2 class="text-6xl font-black text-white lg:text-left text-center">Welcome to the<br><span class="">ReTro</span> Forum</h2>
+               <h2 class="text-3xl lg:text-6xl font-black text-white lg:text-left text-center">Welcome to the<br><span class="">ReTro</span> Forum</h2>
                <p class="font-medium text-xl text-[#FFFFFFCC] mt-[30px] lg:text-left text-center">Share your favorite opinion and win and wp<br>forum coffee mug!</p>
                <div class="mt-[40px] flex lg:mx-0 mx-auto">
                 <input type="text" placeholder="Search here anything" class=" input input-bordered w-full max-w-xs bg-white" id="search"/>
                 <button class=" px-[27px] py-[5px]  bg-[#797DFC] rounded-[46px] font-bold text-white" id="" onclick="search_key()">Search</button>
                 </div>
              </div>
-             <div class="right bg-white flex gap-[56px] p-[48px] lg:mt-0 mt-5 text-2xl font-medium text-[#12132DCC] h-[240px] rounded-[32px]">
+             <div class="right bg-white flex gap-[56px] p-[20px] lg:p-[48px] lg:mt-0 mt-5 text-2xl  lg:font-medium text-[#12132DCC] lg:h-[240px] rounded-[32px]">
                 <div>
                   <p>Registered Users</p>
                   <p>Forum</p>
@@ -63,7 +70,7 @@
                   <p>Replies</p>
                 </div>
                 <div>
-                    <p>01</p>
+                    <p>01</p><br class="lg:hidden block">
                     <p>05</p>
                     <p>01</p>
                     <p>01</p>
@@ -120,7 +127,7 @@
             <span><i class="fa-brands fa-github"></i></span>
         </div>
         <hr class="mt-12">
-        <p class="mt-12 text-[#12132D99] text-center">2023 all rights reserved</p>
+        <p class="mt-12 text-[#12132D99] text-center">2024 all rights reserved</p>
     </footer>
     <script src="js/formula.js"></script>
 </body>
