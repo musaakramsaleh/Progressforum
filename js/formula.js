@@ -32,7 +32,7 @@ const post = async() =>{
           </div>
           <div>
             <span class="font-medium text-[14px] text-[#12132DCC] mr-4">#${record.category}</span>
-            <span class="font-medium text-[14px] text-[#12132DCC] mr-4">#${record.author.name}</span>
+            <span class="font-medium text-[14px] text-[#12132DCC] mr-4">Author: ${record.author.name}</span>
             <h2 class="text-[#12132D] font-bold text-xl">${record.title}</h2>
             <p class="lg:w-[596px] font-normal text-[#12132D99] mt-4">${record.description}</p>
             <hr class="my-5 border-1 border-dashed border-[#12132D40]">
@@ -143,7 +143,7 @@ search_key = async()=>{
           </div>
           <div>
             <span class="font-medium text-[14px] text-[#12132DCC] mr-4">#${record.category}</span>
-            <span class="font-medium text-[14px] text-[#12132DCC] mr-4">#${record.author.name}</span>
+            <span class="font-medium text-[14px] text-[#12132DCC] mr-4">Author: ${record.author.name}</span>
             <h2 class="text-[#12132D] font-bold text-xl">${record.title}</h2>
             <p class="lg:w-[596px] font-normal text-[#12132D99] mt-4">${record.description}</p>
             <hr class="my-5 border-1 border-dashed border-[#12132D40]">
