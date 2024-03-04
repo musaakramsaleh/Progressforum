@@ -11,12 +11,19 @@ const post = async() =>{
     const records = data.posts
     records.forEach(record => {
         const title = record.title
+        let w = ''
+        if(record.isActive === true){
+          w = 'green'
+        }
+        else{
+          w = 'red'
+        }
         const div = document.createElement('div')
         div.classList.add('mt-4')
         let stringWithoutSingleQuotes = record.title.replace(/'/g, '_');
         div.innerHTML = `<div class="flex gap-6 items-start  bg-[#F3F3F5] p-10 rounded-3xl">
         <div class="indicator">
-            <span class="indicator-item badge  bg-green-600" id = "my-color"></span> 
+            <span class="indicator-item badge" style ="background-color:${w}"  id = "my-color"></span> 
             <div class="avatar">
                 <div class="w-[72px] h-[72px] rounded-2xl">
                   <img src="${record.image}" />
@@ -115,12 +122,19 @@ search_key = async()=>{
     print.innerHTML = ''
     post.forEach(record=>{
       const title = record.title
+      let w = ''
+        if(record.isActive === true){
+          w = 'green'
+        }
+        else{
+          w = 'red'
+        }
         const div = document.createElement('div')
         div.classList.add('mt-4')
         let stringWithoutSingleQuotes = record.title.replace(/'/g, '_');
         div.innerHTML = `<div class="flex gap-6 items-start  bg-[#F3F3F5] p-10 rounded-3xl">
         <div class="indicator">
-            <span class="indicator-item badge  bg-green-600" id = "my-color"></span> 
+            <span class="indicator-item badge" style ="background-color:${w}" id = "my-color"></span> 
             <div class="avatar">
                 <div class="w-[72px] h-[72px] rounded-2xl">
                   <img src="${record.image}" />
