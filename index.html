@@ -46,16 +46,16 @@
                <button class="bg-[#797DFC] px-[40px] py-[18px] rounded-[50px] text-xl text-white font-bold">Sign In</button>
             </div>
           </div>
-          <section class="banner bg-[url('images/bgbanner.png')] bg-[#12132D] bg-cover bg-center p-[100px] rounded-[36px] flex justify-between items-center">
+          <section class="banner bg-[url('images/bgbanner.png')] bg-[#12132D] bg-cover bg-center p-[100px] rounded-[36px] flex lg:flex-row flex-col justify-center lg:justify-between items-center">
              <div class="left">
-               <h2 class="text-6xl font-black text-white">Welcome to the<br><span class="">ReTro</span> Forum</h2>
-               <p class="font-medium text-xl text-[#FFFFFFCC] mt-[30px]">Share your favorite opinion and win and wp<br>forum coffee mug!</p>
-               <div class="mt-[40px] flex">
+               <h2 class="text-6xl font-black text-white lg:text-left text-center">Welcome to the<br><span class="">ReTro</span> Forum</h2>
+               <p class="font-medium text-xl text-[#FFFFFFCC] mt-[30px] lg:text-left text-center">Share your favorite opinion and win and wp<br>forum coffee mug!</p>
+               <div class="mt-[40px] flex lg:mx-0 mx-auto">
                 <input type="text" placeholder="Search here anything" class=" input input-bordered w-full max-w-xs bg-white" id="search"/>
                 <button class=" px-[27px] py-[5px]  bg-[#797DFC] rounded-[46px] font-bold text-white" id="" onclick="search_key()">Search</button>
                 </div>
              </div>
-             <div class="right bg-white flex gap-[56px] p-[48px] text-2xl font-medium text-[#12132DCC] h-[240px] rounded-[32px]">
+             <div class="right bg-white flex gap-[56px] p-[48px] lg:mt-0 mt-5 text-2xl font-medium text-[#12132DCC] h-[240px] rounded-[32px]">
                 <div>
                   <p>Registered Users</p>
                   <p>Forum</p>
@@ -76,7 +76,7 @@
         <h1 class="text-center font-black text-[#12132D] text-[40px]">Let's Discuss</h1>
         <p class="max-w-[690px] mx-auto text-center font-normal text-[18px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
         <span class="loading loading-spinner loading-lg mx-auto flex justify-center hidden" id="loader"></span>
-        <div class="section-divider flex justify-between items-start mt-12" >
+        <div class="section-divider flex lg:flex-row flex-col justify-center lg:justify-between items-center lg:items-start mt-12" >
             <div id="post-section">
             </div>
             <div class="bg-[#F3F3F5] p-6 rounded-3xl mt-4 w-[374px]" id="press">
@@ -90,20 +90,20 @@
             </div>
         </div>
        </section>
-       <section class="forum bg-[#12132D] flex pt-16 pl-[91px] pr-5 mt-[100px] rounded-[32px]">
-          <div class="forum-left mt-[33px]">
-            <h2 class="text-white font-black text-[40px]">Join Our Forum</h2>
-            <p class="text-[#FFFFFFCC] max-w-[652px] mt-5">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app.</p>
+       <section class="forum bg-[#12132D] flex lg:flex-row items-center flex-col pt-16 lg:pl-[91px] lg:pr-5 mt-[100px] rounded-[32px]">
+          <div class="forum-left mt-[33px] lg:block flex flex-col justify-center items-center">
+            <h2 class="text-white font-black lg:text-left text-center text-[40px]">Join Our Forum</h2>
+            <p class="text-[#FFFFFFCC] lg:text-left text-center max-w-[652px] mt-5">Share your favorite opinion and win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the app.</p>
             <button class="px-10 py-[16px] mt-[32px] bg-[#797DFC] rounded-[32px] font-bold text-xl text-white">Register Now</button>
           </div>
-          <div class="forum-right">
+          <div class="forum-right lg:mt-0 mt-5">
              <span><img src="images/joinforum.png" alt=""></span>
           </div>
        </section>
        <section class="post mt-[100px]">
         <h2 class="text-center font-black text-[#12132D] text-[40px]">Latest Posts</h2>
         <p class="max-w-[690px] mx-auto text-center font-normal text-[18px]">Yes, you can run unit tests and view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-        <div class="latest-post mt-12 flex gap-6" id = 'latest_card'>
+        <div class="latest-post mt-12 flex lg:flex-row flex-col gap-6" id = 'latest_card'>
             
         </div>
        </section>
