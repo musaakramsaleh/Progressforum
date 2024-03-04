@@ -136,7 +136,7 @@ search_key = async()=>{
         <div class="indicator">
             <span class="indicator-item badge" style ="background-color:${w}" id = "my-color"></span> 
             <div class="avatar">
-                <div class=" rounded-2xl">
+                <div class="lg:w-[72px] w-[100px] h-[100px] lg:h-[72px] rounded-2xl">
                   <img src="${record.image}" />
                 </div>
               </div>
